@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: rgba(90, 254, 249, 0.6);
+  max-width: 30vw;
+  min-height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container .card {
+  height: 100%;
+  padding: 1.5em;
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  background-color: rgba(49, 234, 237, 0.9);
+  transition: all 0.4s ease-in-out;
+}
+.container .card h1 {
+  margin-bottom: 15px;
+}
+.container .card p {
+  font-size: 1.125rem;
+}
+.container:hover .card {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}/*# sourceMappingURL=style.css.map */

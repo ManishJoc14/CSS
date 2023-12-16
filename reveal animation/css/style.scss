@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+
+    max-width: 40vw;
+    min-height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .card {
+        span {
+            float: right;
+            font-weight: 600;
+        }
+
+        height: 100%;
+        padding: 1.4em 1.7em;
+        clip-path: circle(10% at 90% 20%);
+        background-color: rgba(90, 254, 249, 0.6);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            clip-path: circle(75%);
+            background-color: rgba(49, 234, 237, 0.9);
+
+            span {
+                display: none;
+            }
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+    }
+}
