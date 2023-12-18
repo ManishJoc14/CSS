@@ -3,29 +3,59 @@
     padding: 0;
     box-sizing: border-box;
   }
+  @property --gradient-angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  :root{
+    --clr-1 : #052b2f;
+    --clr-2 : #e3e9ea;
+    --clr-3 : #2a31fc;
+    --clr-4 : #5be6db;
+    --clr-5 : #f628f3;
+  }
+
   .container {
     height: 100vh;
     width: 100vw;
+    background: var(--clr-2);
     display: grid;
     place-items: center;
   }
   .card {
-    height: 250px;
-    width: 200px;
+    height: 300px;
+    aspect-ratio: 1/1.5;
     color: rgb(255, 255, 255);
-    background: linear-gradient(50deg, rgb(252, 84, 58), rgb(253, 58, 205) , rgb(41, 41, 245));
+    background: var(--clr-1);
     position: relative;
     isolation: isolate;
+    border-radius: 10px;
   }
   
-  .card::before, .card::after  {
+  .card::before, 
+  .card::after {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: 0rem;
     z-index: -1;
-    background: inherit;
+    border-radius: inherit;
+    background: conic-gradient(
+             from var(--gradient-angle),
+                  var(--clr-3),
+                  var(--clr-4),
+                  var(--clr-5),
+                  var(--clr-4),
+                  var(--clr-3)
+                 );  
+    animation: rotation 15s linear infinite;
   }
-  .card::before{
+  @keyframes rotation {
+    0%{ --gradient-angle : 0deg;}
+    100%{ --gradient-angle : 360deg;}
+    
+  }
+  .card::after{
     filter : blur(1em);
   }
   .card h1 {
