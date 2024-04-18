@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    background-color: #f0f2f5;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+  .left {
+    width: 550px;
+  }
+
+  .left h1 {
+    color: #1878f3;
+    font-size: 4rem;
+  }
+
+  .left p {
+    font-size: 2rem;
+  }
+
+  .right {
+    min-width: 320px;
+    width: 400px;
+    max-width: 420px;
+    background-color: #fff;
+    border: 2px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  .right input {
+    outline: none;
+    height: 55px;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0 14px;
+    border: 1px solid #ccc;
+  }
+
+  .right input:focus {
+    border-color: #1877f2;
+  }
+
+  ::placeholder {
+    color: #777;
+    font-size: 1.063rem;
+  }
+
+  .right input[type="submit"] {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1877f2;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+  }
+
+  .right input[type="submit"]:hover {
+    background: #0d65d9;
+  }
+
+  #forget {
+    color: #1877f2;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  #forgot:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+  }
+
+  .right input[type="button"] {
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .right input[type="button"]:hover {
+    background: #3ba626;
+  }
+  .right #textOutside {
+    position: absolute;
+    bottom: -60px;
+    left: 10%;
+  }
+  @media (max-width: 1024px) {
+    .left p {
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 20%;
+      gap: 3rem;
+    }
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+    }
+    .left h1 {
+      font-size: 2rem;
+    }
+    .left p {
+      font-size: 1.4rem;
+    }
+    .right input {
+      height: 45px;
+      font-size: 0.8rem;
+    }
+    .right input[type="button"],
+    .right input[type="submit"]{
+        font-size: 1rem;
+    }
+    hr{
+        margin: 5px 0;
+    }
+    .right #textOutside {
+      font-size: 0.9rem;
+      position: absolute;
+      bottom: -50px;
+    }
+  }
