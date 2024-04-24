@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main with sidebar</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 40px;
+      }
+      .parent {
+        outline: 5px solid red;
+        font-size: 1.1rem;
+        padding: 1rem;
+      }
+      .main-with-sidebar {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .children {
+        background-color: rgb(219, 218, 251);
+        padding: 10px;
+      }
+      .main-with-sidebar > :first-child {
+        flex-basis: 500px;
+        /* sets roughly minimum size and can grow above it*/
+        flex-grow: 5;
+        /* hack : rate of grow is big for this */
+        /* says grow if space is available */
+      }
+      .main-with-sidebar > :last-child {
+        flex-basis: 300px;
+        /* sets roughly minimum size */
+        flex-grow: 1;
+        /* says grow if space is available */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-with-sidebar parent">
+      <div class="children">
+        <p><b>Lorem ipsum</b></p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, autem
+        aut assumenda et eos ea sit porro cum vitae temporibus cumque obcaecati
+        nam accusamus eligendi perferendis numquam, magni dignissimos?
+        Voluptate. Vero nesciunt praesentium eligendi facilis esse quisquam
+        neque voluptatum cupiditate quas inventore optio atque similique animi
+        quibusdam culpa, voluptatibus asperiores velit vitae. Saepe optio
+        <br />
+        laborum officia eaque voluptatem harum totam! Sed, consequatur!
+        Dignissimos, quaerat ullam? Nemo soluta exercitationem iure aperiam
+        perspiciatis beatae vitae. Vitae, nihil nostrum eum quaerat libero,
+        deserunt quae cumque velit ipsam debitis nobis minima. Dolorem, nulla
+        <br />
+        dolor. Repudiandae magni minus praesentium iste ullam dicta dolor
+        cupiditate, nostrum adipisci laborum. Ducimus qui corrupti ad tempore
+        fugiat consectetur soluta atque. Quod, commodi excepturi. In error
+        <br />commodi corporis inventore vel. Tempora omnis pariatur explicabo
+        consectetur similique perspiciatis porro officia expedita, dolorum fuga,
+        dolores corporis quos quam laborum praesentium totam veniam culpa
+        aliquid dolore magnam doloribus quaerat quo provident voluptatibus.
+        Quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
+        autem aut assumenda et eos ea sit porro cum vitae temporibus cumque
+        obcaecati nam accusamus eligendi perferendis numquam, magni dignissimos?
+        Voluptate. Vero nesciunt praesentium eligendi facilis esse quisquam
+        neque voluptatum cupiditate quas inventore optio atque similique animi
+        quibusdam culpa, voluptatibus asperiores velit vitae. Saepe optio
+        <br />
+        laborum officia eaque voluptatem harum totam! Sed, consequatur!
+        Dignissimos, quaerat ullam? Nemo soluta exercitationem iure aperiam
+        perspiciatis beatae vitae. Vitae, nihil nostrum eum quaerat libero,
+        deserunt quae cumque velit ipsam debitis nobis minima. Dolorem, nulla
+        <br />
+        dolor. Repudiandae magni minus praesentium iste ullam dicta dolor
+        cupiditate, nostrum adipisci laborum. Ducimus qui corrupti ad tempore
+        fugiat consectetur soluta atque. Quod, commodi excepturi. In error
+        <br />commodi corporis inventore vel. Tempora omnis pariatur explicabo
+        consectetur similique perspiciatis porro officia expedita, dolorum fuga,
+        dolores corporis quos quam laborum praesentium totam veniam culpa
+        aliquid dolore magnam doloribus quaerat quo provident voluptatibus.
+        Quidem!
+      </div>
+      <div class="children">
+        <p><b>Lorem ipsum</b></p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, fugit
+        <br />
+        accusamus provident, voluptatum vitae dolor voluptatem necessitatibus at
+        eius consequuntur architecto. <br />Earum, deleniti quod repudiandae
+        quas quis id vel repellat?
+      </div>
+    </div>
+  </body>
+</html>

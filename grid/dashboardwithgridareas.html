@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(218, 218, 250);
+      }
+      .parent {
+        padding: 20px;
+
+        background-color: rgb(149, 149, 246);
+
+        display: grid;
+        grid-auto-rows: 150px;
+        gap: 20px;
+        grid-template-areas:
+          " a a a b b b c c c d d d"
+          " e e e e e e e e f f f f"
+          " e e e e e e e e f f f f"
+          " g g g g h h h h i i i i"
+          " g g g g h h h h i i i i";
+      }
+      .parent > * {
+        background-color: rgb(74, 74, 254);
+        color: #fff;
+
+        display: grid;
+        place-content: center;
+        border-radius: 10px;
+      }
+      /*  Row 1 items  */
+      .parent .a {
+        grid-area: a;
+      }
+      .parent .b {
+        grid-area: b;
+      }
+      .parent .c {
+        grid-area: c;
+      }
+      .parent .d {
+        grid-area: d;
+      }
+
+      /*  Row 2 items  */
+      .parent .e {
+        grid-area: e;
+      }
+      .parent .f {
+        grid-area: f;
+      }
+
+      /*  Row 3 items  */
+      .parent .g {
+        grid-area: g;
+      }
+      .parent .h {
+        grid-area: h;
+      }
+      .parent .i {
+        grid-area: i;
+      }
+      @media screen and (max-width: 720px) {
+        .parent {
+          grid-template-areas:
+            " a a a a a a b b b b b b"
+            " c c c c c c d d d d d d"
+            " e e e e e e e e f f f f"
+            " e e e e e e e e f f f f"
+            " g g g g h h h h i i i i"
+            " g g g g h h h h i i i i";
+        }
+      }
+      @media screen and (max-width: 520px) {
+        .parent {
+          grid-template-areas:
+            " a a a a a a b b b b b b"
+            " c c c c c c d d d d d d"
+            " e e e e e e e e e e e e"
+            " e e e e e e e e e e e e"
+            " f f f f f f f f f f f f"
+            " f f f f f f f f f f f f"
+            " g g g g g g g g g g g g"
+            " h h h h h h h h h h h h"
+            " i i i i i i i i i i i i";
+        }
+      }
+      @media screen and (max-width: 350px) {
+        .parent {
+          grid-template-areas:
+            " a a a a a a a a a a a a"
+            " b b b b b b b b b b b b"
+            " c c c c c c c c c c c c"
+            " d d d d d d d d d d d d"
+            " e e e e e e e e e e e e"
+            " e e e e e e e e e e e e"
+            " f f f f f f f f f f f f"
+            " f f f f f f f f f f f f"
+            " g g g g g g g g g g g g"
+            " h h h h h h h h h h h h"
+            " i i i i i i i i i i i i";
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <div class="parent">
+        <!-- Row 1 items -->
+        <div class="a">Child</div>
+        <div class="b">Child</div>
+        <div class="c">Child</div>
+        <div class="d">Child</div>
+
+        <!-- row 2 items -->
+        <div class="e">Child</div>
+        <div class="f">Child</div>
+
+        <!-- Row 3 items -->
+        <div class="g">Child</div>
+        <div class="h">Child</div>
+        <div class="i">Child</div>
+      </div>
+  </body>
+</html>

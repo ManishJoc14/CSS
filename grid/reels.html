@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reels</title>
+    <style>
+      body {
+        background-color: azure;
+        overflow-x: hidden;
+      }
+      .reels {
+        --gap: 1rem;
+        overflow-x: scroll;
+        border: 2px solid red;
+        display: grid;
+        grid-auto-flow: column;
+        gap: var(--gap);
+        padding: var(--gap);
+        grid-auto-columns: calc(50% - var(--gap)/2);
+        scroll-snap-type: x mandatory;
+        scroll-padding: var(--gap);
+      }
+      .reel {
+        background-color: rgb(114, 114, 251);
+        padding: 20px;
+        height: 150px;
+        text-align: center;
+        scroll-snap-align: start;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="reels">
+        <div class="reel">Reel</div>
+        <div class="reel">Reel</div>
+        <div class="reel">Reel</div>
+        <div class="reel">Reel</div>
+        <div class="reel">Reel</div>
+        <div class="reel">Reel</div>
+        <div class="reel">Reel</div>
+        <div class="reel">Reel</div>
+        <div class="reel">Reel</div>
+      </div>
+  </body>
+</html>
