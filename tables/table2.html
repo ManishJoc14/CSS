@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table-2</title>
+    <style>
+      * {
+        /* reset all default margins and paddings */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 2px solid #5c5b5b;
+        margin: 10px auto;
+        padding: 10px;
+        max-width: 600px;
+      }
+      .info {
+        text-align: center;
+        border-bottom: 2px solid #000;
+        padding: 10px 0;
+      }
+      .customerInfo {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        column-gap: 30px;
+        font-weight: 500;
+      }
+      .customerInfo div {
+        flex-grow: 1;
+      }
+      .flex {
+        display: flex;
+        align-items: baseline;
+      }
+      .dots {
+        flex-grow: 1;
+        border-bottom: 2px dashed #000;
+      }
+      .tableContainer {
+        overflow-x: scroll;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+      #secondRow {
+        height: 300px;
+      }
+      #termsAndConditions {
+        margin: 20px 0;
+      }
+      #signature {
+        display: flex;
+        justify-content: flex-end;
+      }
+      #signature span {
+        border-top: 2px dashed #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <h1>It Zone Computer Education</h1>
+        <p>Janaki Tole, kanchanpur</p>
+        <p>Phone: 9841822340, 9848899760</p>
+      </div>
+
+      <div class="customerInfo">
+        <!-- left div -->
+        <div>
+          <div class="flex">
+            <p>Customer Name:</p>
+            <p class="dots"></p>
+          </div>
+          <div class="flex">
+            <p>Mobile No:</p>
+            <p class="dots"></p>
+          </div>
+          <div class="flex">
+            <p>Address:</p>
+            <p class="dots"></p>
+          </div>
+        </div>
+        <!-- Right div -->
+        <div class="flex">
+          <p>Date:</p>
+          <p class="dots"></p>
+        </div>
+      </div>
+
+      <div class="tableContainer">
+        <table>
+          <tr>
+            <th>SN</th>
+            <th>Description</th>
+            <th>Qty.</th>
+            <th>Rate</th>
+            <th>Amount</th>
+          </tr>
+          <tr id="secondRow">
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th colspan="4">Grand Total</th>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <p id="termsAndConditions">
+        <b>Term & Condition:</b> Goods ones sold will not be taken back.
+      </p>
+      
+      <div id="signature">
+        <span>Authorized Signature</span>
+      </div>
+    </div>
+  </body>
+</html>
