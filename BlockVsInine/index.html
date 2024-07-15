@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Vs Inline Elements</title>
+
+    <style>
+      .container,
+      p,
+      header,
+      footer,
+      h1,
+      ul,
+      ol {
+        background-color: rgb(250, 216, 217);
+        border: 1px solid red;
+        border-radius: 10px;
+
+        height: 80px;
+        width: 200px;
+
+        margin-left: 150px;
+        margin-top: 30px;
+
+        padding: 20px;
+      }
+      header {
+        height: auto;
+      }
+
+      span,
+      i,
+      b,
+      em,
+      sup,
+      sub,
+      code,
+      kbd {
+        /* background-color: rgb(250, 216, 217); */
+        border: 1px solid red;
+
+        height: 200px;
+        width: 200px;
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        /* margin-left: 100px; */
+        /* margin-right: 100px; */
+
+        /* padding-top: 100px; */
+        /* padding-bottom: 100px; */
+
+        /* padding-left: 50px; */
+        /* padding-right: 50px; */
+
+        /* line-height: 2; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Block level elements -->
+    <!-- we can give height, width, margins paddings and more  -->
+    <!-- <header>Block level Elements
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, reprehenderit?
+      Lorem ipsum dolor odit nisi at? Labore minus nisi, molestias praesentium magnam, aut modi ea vitae amet eum dignissimos blanditiis rerum.
+    </header>
+
+    <h1>heading1</h1>
+
+    <div class="container">This is div</div>
+    <p>this is paragraph</p>
+    <footer>Footer</footer>
+    <ul>
+      <li>List items</li>
+      <li>List items</li>
+      <li>List items</li>
+      <li>List items</li>
+    </ul>
+    <ol>
+      <li>List items</li>
+      <li>List items</li>
+      <li>List items</li>
+      <li>List items</li>
+    </ol> -->
+
+    <!-- Inline Elements -->
+    <!-- We cannot give height and widths -->
+    <!-- they maintains their normal document flow -->
+    <!-- so they avoids margin-top and margin-bottom , height 
+      and widths which will disturbs the normal form -->
+    <span>Span tag </span>
+    <i>Italic text</i>
+    <b>bold text</b>
+    <em>emphasis</em>
+    <code>code here</code>
+    <kbd>keyboard type texts</kbd>
+    <span>Span tag </span>
+    <i>Italic text</i>
+    <b>bold text</b>
+    <em>emphasis</em>
+    <code>code here</code>
+    <kbd>keyboard type texts</kbd>
+    <span>Span tag </span>
+    <i>Italic text</i>
+    <b>bold text</b>
+    <em>emphasis</em>
+    <code>code here</code>
+    <kbd>keyboard type texts</kbd>
+  </body>
+</html>

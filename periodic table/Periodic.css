@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	font-family: Georgia, Helvetica, sans-serif;
+	text-weight: Bold;
+	padding: 5px;
+	font-size: 30px;
+}
+
+caption {
+	background-color: #ff2b5f;
+	color: white;
+	font-size: 150px;
+	text-align: center;
+	border-color: Blue;
+	margin: 20px;
+	border-radius: 20px;
+	height: 200px;
+}
+
+#table1 {
+	border: 2px solid white;
+	cellspacing: 1;
+}
+
+#table2,
+td {
+	border: 2px solid white;
+	cellspacing: 1;
+	margin-top: 12px;
+	background-color: #f8ff80;
+	height: 80%;
+	width: 80%;
+}
+
+
+#tr1 {
+	color: Red;
+}
+
+.white {
+	background-color: white;
+}
+
+div {
+	background-color: #fffc6a;
+}
+
+.yellow {
+	background-color: #f8ff80;
+}
+
+.Pink {
+	background-color: #ff55f1;
+}
+
+.Blue {
+	background-color: #80acff;
+}
+
+#N,
+#O,
+#F,
+#Ne,
+#Cl,
+#Ar,
+#Kr,
+#Xe,
+#Rn,
+#Og {
+	color: red;
+}
+
+.orange {
+	background-color: #ff9d00;
+}
+
+#tr2 {
+	border-top: none;
+}
+
+#tr1 {
+	border-bottom: none;
+}
+
+.Green {
+	background-color: #2bab42;
+}
+
+.Grey {
+	background-color: Grey;
+}

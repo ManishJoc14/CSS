@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Level Elements</title>
+    <style>
+      /* CSS styling for highlighting block-level elements */
+      /*   
+      css trick : 
+      '* * *' this selects every elements inside body 
+      html -> body -> elements
+      */
+      * * * {
+        outline: 2px solid red;
+        /* An inline element does not start on a new line and it only takes up as much width as necessary */
+        /* margins, height, width doesnot work on inline elements */
+        margin-bottom: 200px;
+        /* height: 100px;
+        width: 200px; */
+        /* remember padding works */
+        /* padding : 10px; */
+      }
+
+      .flex {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Anchor: Creates a hyperlink to another webpage or resource -->
+    <a href="#">This is an anchor (link) element.</a>
+
+    <!-- Span: Provides a generic container for inline content, often used for styling or scripting purposes -->
+    <span>This is a span element.</span>
+
+    <!-- Strong: Indicates strong emphasis, typically displayed in bold -->
+    <strong>This is a strong element.</strong>
+
+    <!-- Emphasis: Indicates emphasis, typically displayed in italics -->
+    <em>This is an emphasis element.</em>
+
+    <!-- Italic: Displays text in italics -->
+    <i>This is an italicized text.</i>
+
+    <!-- Code: Represents a fragment of computer code, typically displayed in monospace font -->
+    <code>This is a code element.</code>
+
+    <!-- Subscript: Displays text below the baseline, often used for mathematical or chemical formulas -->
+    <sub>This is subscripted text.</sub>
+
+    <!-- Superscript: Displays text above the baseline, commonly used for footnotes or exponentiation -->
+    <sup>This is superscripted text.</sup>
+
+    <!-- Abbreviation: Indicates an abbreviated form of a word or phrase -->
+    <abbr title="Hypertext Markup Language">HTML</abbr>
+
+    <!-- Citation: Represents a reference to a creative work, such as a book, article, or movie -->
+    <cite>This is a citation element.</cite>
+
+    <!-- Quote: Indicates inline quotations, such as short phrases or citations -->
+    <q>This is a quotation element.</q>
+
+    <!-- Time: Represents a specific time or date, typically used for scheduling or timestamps -->
+    <time datetime="2024-04-18">April 18, 2024</time>
+
+    <!-- Inline-Block Elements : Both-->
+    <!-- Input: Allows user input, such as text, checkboxes, or buttons -->
+    <!-- <input type="text" placeholder="Enter your name" />
+    <img src="image.jpg" alt="image"> -->
+
+    <!-- Giving display flex to the parent will give display inline-block to all direct childs -->
+    <div class="flex">
+      <!-- here flex allows us to give height and width on span tags (they are direct child) -->
+      <span>Hello</span>
+      <span>Word</span>
+    </div>
+
+  </body>
+</html>

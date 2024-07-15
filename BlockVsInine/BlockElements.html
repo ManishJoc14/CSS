@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Level Elements</title>
+    <style>
+      /*   
+      css trick : 
+      '* * *' this selects every elements inside body 
+      html -> body -> elements
+      */
+      * * * {
+        outline: 2px solid red;
+        margin-bottom: 30px;
+        /* A block-level element always starts on a new line and takes up the full width available */
+        /* to block level elements we can give => margins, height, width, padding etc*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Heading: Defines the topic of the document -->
+    <h1>Block Level Elements</h1>
+
+    <!-- Paragraph: Represents a block of text -->
+    <p>This is a paragraph block.</p>
+
+    <!-- Division: Container for organizing content -->
+    <div>This is a div block.</div>
+
+    <!-- Header: Typically navigation links at the top of a document -->
+    <header>This is a header block.</header>
+
+    <!-- Navigation: Contains links for navigating within the document or to external pages -->
+    <nav>This is a nav block.</nav>
+
+    <!-- Main: Encloses the primary content of the document, excluding header, footer, and sidebar -->
+    <main>This is a main block.</main>
+
+    <!-- Footer: Displays information at the bottom of a document-->
+    <footer>This is a footer block.</footer>
+
+    <!-- Section: Groups related content together, providing structure and clarity -->
+    <section>This is a section block.</section>
+
+    <!-- Article: Represents a self-contained piece of content that can stand alone, such as a blog post or news article -->
+    <article>This is an article block.</article>
+
+    <!-- Unordered List: Presents a list of items in no particular order -->
+    <ul>
+      <li>This is an unordered list item inside a ul block.</li>
+      <li>This is another unordered list item inside a ul block.</li>
+    </ul>
+
+    <!-- Form: Contains input fields, buttons, and other elements for collecting user input -->
+    <form>This is a form block.</form>
+
+    <!-- Preformatted Text: Displays text exactly as it appears in the HTML file -->
+    <pre>
+  This is preformatted text.
+  It preserves both spaces    and    line breaks.
+</pre
+
+    >
+  </body>
+</html>

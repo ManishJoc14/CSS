@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapsible</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background-color: #f0f1f3;
+      }
+      details {
+        position: relative;
+      }
+      details[open] summary {
+        background-color: rgb(231, 206, 254);
+      }
+      details summary {
+        list-style: none;
+        cursor: pointer;
+        background-color: #fff;
+        width: max-content;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      details ol {
+        background-color: #fff;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+        width: max-content;
+        padding: 10px 5px;
+        list-style: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+      }
+      ol li {
+        transition: 0.5 all ease;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        grid-template-rows: 20px;
+        column-gap: 15px;
+      }
+      ol li:hover {
+        background-color: rgb(231, 206, 254);
+      }
+    </style>
+  </head>
+  <body>
+    <details open>
+      <summary><i class="fa-solid fa-ellipsis-vertical"></i></summary>
+      <ol>
+        <li><i class="fa-solid fa-cart-shopping"></i> Add to cart</li>
+        <li><i class="fa-solid fa-question"></i> Question</li>
+        <li><i class="fa-solid fa-flag"></i> Report</li>
+      </ol>
+    </details>
+  </body>
+</html>

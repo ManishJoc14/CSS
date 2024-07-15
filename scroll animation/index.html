@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll animation</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+        padding: 200px 0;
+      }
+
+      .appear {
+        animation: appear linear;
+      }
+      .slideToRight {
+        animation: slideToRight linear;
+      }
+      .slideToLeft {
+        animation: slideToLeft linear;
+      }
+      .slideToTop {
+        animation: slideToTop linear;
+      }
+
+      .child {
+        width: 500px;
+        height: 500px;
+        background-color: rgb(150, 61, 233);
+        animation-timeline: view();
+        /* animation-range: entry 0% cover 40%; */
+        animation-range: entry;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+      @keyframes slideToRight {
+        from {
+          opacity: 0;
+          transform: translateX(-200px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes slideToLeft {
+        from {
+          opacity: 0;
+          transform: translateX(200px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      @keyframes slideToTop {
+        from {
+          opacity: 0;
+          transform: translateY(400px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animate on scroll</h1>
+    <div class="container">
+      <div class="child"></div>
+      <div class="child"></div>
+
+      <div class="child slideToRight"></div>
+      <div class="child slideToLeft"></div>
+
+      <div class="child appear"></div>
+      <div class="child slideToLeft"></div>
+
+      <div class="child slideToTop"></div>
+      <div class="child appear"></div>
+
+      <div class="child slideToRight"></div>
+      <div class="child slideToTop"></div>
+
+      <div class="child slideToTop"></div>
+      <div class="child slideToLeft"></div>
+
+      <div class="child slideToRight"></div>
+      <div class="child appear"></div>
+
+      <div class="child appear"></div>
+      <div class="child slideToRight"></div>
+
+      <div class="child slideToTop"></div>
+      <div class="child slideToTop"></div>
+
+      <div class="child slideToLeft"></div>
+      <div class="child appear"></div>
+    </div>
+  </body>
+</html>
